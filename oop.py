@@ -57,7 +57,6 @@ print(alumno_juan.esta_libre())
 alumno_juan.falta()
 print(alumno_juan.esta_libre())
 
-
 alumno_maria.elegir_dieta("Vegetariana")
 print(alumno_maria.__dieta__)
 
