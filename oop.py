@@ -1,7 +1,7 @@
 class Profesor:                                
-    def __init__(self, __nombre__, __email__):   
-        self.__nombre__ = __nombre__          
-        self.__email__ = __email__                  
+    def __init__(self, el_nombre, el_email):   
+        self.__nombre__ = el_nombre                
+        self.__email__ = el_email                  
 
     def dame_tu_nombre(self):
         return self.__nombre__                     
@@ -10,8 +10,8 @@ class Profesor:
         return self.__email__
     
 class Alumno:
-    def __init__(self, __nombre_del_alumno__):
-        self.__nombre__ = __nombre_del_alumno__
+    def __init__(self, el_nombre_del_alumno):
+        self.__nombre__ = el_nombre_del_alumno
         self.__inasistencias__ = 0
         self.__dieta__ = ""
         self.__mentor__ = None                     
@@ -25,14 +25,14 @@ class Alumno:
         else:
             return "OK"
     
-    def elegir_dieta(self, __la_dieta__):
-        self.__dieta__ = __la_dieta__
+    def elegir_dieta(self, la_dieta):
+        self.__dieta__ = la_dieta
 
     def es_vegano(self):
         self.__dieta__ = "Vegano"
         
-    def mentoria(self, __profesor__):
-        self.__mentor__ = __profesor__
+    def mentoria(self, profesor):
+        self.__mentor__ = profesor
 
 
 profe_elio = Profesor("Elio", "elio@gmail.com")            
